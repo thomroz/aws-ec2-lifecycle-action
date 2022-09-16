@@ -1,0 +1,45 @@
+{
+  "type": "module",
+  "name": "aws-ec2-lifecycle-action",
+  "version": "1.0.0",
+  "description": "This action can launch, start, stop, or terminate an AWS EC2 instance",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/github": "^5.0.3",
+    "@aws-sdk/client-ec2": "^3.170.0",
+    "before-after-hook": "^2.2.2",
+    "deprecation": "^2.3.1",
+    "is-plain-object": "^5.0.0",
+    "node-fetch": "^2.6.7",
+    "once": "^1.4.0",
+    "tr46": "^0.0.3",
+    "tunnel": "^0.0.6",
+    "universal-user-agent": "^6.0.0",
+    "uuid": "^8.3.2",
+    "webidl-conversions": "^3.0.1",
+    "whatwg-url": "^5.0.0",
+    "wrappy": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomroz/aws-ec2-lifecycle-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomroz/aws-ec2-lifecycle-action/issues"
+  },
+  "homepage": "https://github.com/thomroz/aws-ec2-lifecycle-action#readme",
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1"
+  }
+}

@@ -1,0 +1,30 @@
+name: 'aws-ec2-lifecycle'
+description: 'This action can tag, launch, start, stop, reboot, or terminate an EC2 instance in AWS'
+inputs:
+  region:
+    description: 'AWS region'
+    required: true
+  state-verb:
+    description: 'tag, launch, start, stop, rebooot, terminate'
+    required: true
+  instance-type:
+    description: 'instance type'
+    required: false
+  image-id:
+    description: 'image id'
+    required: false
+  template-id:
+    description: 'template id'
+    required: false
+  instance-ids:
+    description: 'instance ids'
+    required: false
+  tags:
+    description: 'tags'
+    required: false
+outputs:
+  launched-id:
+    description: 'the launched instance id'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
